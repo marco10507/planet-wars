@@ -9,8 +9,7 @@ from sklearn.externals import joblib
 
 from api import State, util
 
-# from bots.ml.ml import features
-from bots.ml_alphabeta.ml_alphabeta import features
+from bots.ml.ml import features
 
 BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE = range(8)
 colors = {
