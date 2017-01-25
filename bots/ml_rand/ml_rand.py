@@ -33,12 +33,6 @@ class Bot:
 
         return move
 
-    def set_model(self, __model):
-        model_file = os.path.dirname(os.path.realpath(__file__)) + '/' + __model
-        self.__model = joblib.load(model_file)
-        print("Default model overridden: " + model_file)
-
-
     def value(self, state, alpha=float('-inf'), beta=float('inf'), depth = 0):
         """
         Return the value of this state and the associated move

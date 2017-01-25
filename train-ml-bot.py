@@ -16,21 +16,23 @@ from sklearn.externals import joblib
 from bots.rand import rand
 # from bots.alphabeta import alphabeta
 from bots.ml import ml
+from bots.ml_alphabeta import ml_alphabeta
 
-from bots.ml.ml import features
+from bots.ml_alphabeta.ml_alphabeta import features
 
 import matplotlib.pyplot as plt
 
 # How many games to play
-GAMES = 1000
+GAMES = 10
 # Number of planets in the field
 NUM_PLANETS = 6
 # Maximum number of turns to play
 NUM_TURNS = 100
 
 # The player we'll observe
-player = rand.Bot()
+# player = rand.Bot()
 # player = alphabeta.Bot()
+player = ml_alphabeta.Bot()
 
 data = []
 target = []
